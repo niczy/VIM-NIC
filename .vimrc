@@ -12,6 +12,7 @@ Bundle 'gmarik/vundle'
 "
 " original repos on GitHub
 Bundle 'scrooloose/nerdtree'
+Bundle 'kien/ctrlp.vim'
 
 
 filetype plugin indent on     " required!
@@ -24,3 +25,10 @@ filetype plugin indent on     " required!
 "
 " see :h vundle for more details or wiki for FAQ
 " NOTE: comments after Bundle commands are not allowed.
+"
+
+" Map for nerdtree.
+map <Leader>nt :NERDTreeToggle<CR>
+
+" Vim basic config.
+:set hlsearch
