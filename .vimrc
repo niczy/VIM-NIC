@@ -13,6 +13,7 @@ Bundle 'gmarik/vundle'
 " original repos on GitHub
 Bundle 'scrooloose/nerdtree'
 Bundle 'kien/ctrlp.vim'
+Bundle 'Valloric/YouCompleteMe'
 
 
 filetype plugin indent on     " required!
