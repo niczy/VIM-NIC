@@ -1,4 +1,4 @@
 
 [submodule "bundle/vundle"]
-	path = vundle
+	path = bundle/vundle
 	url = https://github.com/gmarik/vundle.git
