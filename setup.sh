@@ -1,4 +1,4 @@
 git submodule init
 git submodule update
 cd ~
-ln -sf .vim/.vimrc ~/.vimrc
+ln -sf ~/.vimrc ~/.vim/.vimrc 
