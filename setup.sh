@@ -1,5 +1,9 @@
 git submodule init
 git submodule update
-cd ~
-rm ~/.vimrc
-ln -sf ~/.vimrc ~/.vim/.vimrc 
+if [ -e "~/.vimrc" ]
+then 
+  rm ~/.vimrc
+fi
+ln -sf ~/.vim/.vimrc ~/.vimrc  
+vim +PluginInstall +qall
+~/.vim/bundle/YouCompleteMe/install.sh
