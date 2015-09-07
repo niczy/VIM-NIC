@@ -13,7 +13,6 @@ Plugin 'gmarik/vundle'
 " original repos on GitHub
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
-Plugin 'Valloric/YouCompleteMe'
 Plugin 'fatih/vim-go'
 
 
@@ -48,3 +47,13 @@ filetype plugin indent on
 
 " Nerdtree config
 let NERDTreeIgnore=['\.pyc']
+
+" Ctrl-P config
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
+
+let g:ctrlp_max_files = 0
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+  \ 'file': '\v\.(exe|so|dll)$',
+  \ 'link': 'some_bad_symbolic_links',
+  \ }
