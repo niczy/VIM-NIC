@@ -48,3 +48,4 @@ filetype plugin indent on
 
 " Nerdtree config
 let NERDTreeIgnore=['\.pyc']
+au BufNewFile,BufRead *.ejs set filetype=html
