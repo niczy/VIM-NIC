@@ -17,6 +17,9 @@ Plugin 'fatih/vim-go'
 if filereadable(expand('~/.at_google')) 
   source /usr/share/vim/google/google.vim
   Glug youcompleteme-google
+  Glug youcompleteme-google
+  command Jade !/google/data/ro/teams/jade/jade %
+  map <Leader> :Jade<CR>
 else
   Plugin 'Valloric/YouCompleteMe'
 endif
@@ -68,3 +71,4 @@ let g:ctrlp_custom_ignore = {
 
 " File type config
 au BufNewFile,BufRead *.ejs set filetype=html
+
